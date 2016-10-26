@@ -1,14 +1,16 @@
 import React from 'react';
 import Card from './Card';
 
-export default ({cards}) => {
+export default ({cards, flipCard}) => {
+
+    console.log(flipCard);
 
     return (
         <ul className="cards-list">
             {
                 cards.map(card =>
                     <li>
-                        <Card card={card} ></Card>
+                        <Card card={card} flipCard={flipCard} ></Card>
                     </li>
                 )
             }
@@ -16,6 +18,5 @@ export default ({cards}) => {
     )
 
 }
-
 
 

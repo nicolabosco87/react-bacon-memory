@@ -12,8 +12,10 @@ export default function configureStore(initialState) {
         })
     }
 
+    store.subscribe(() => {
+        console.log("store_0 has been updated. Last action:" + store.getState().lastAction);
+    });
+
     return store;
 }
-
-
 
