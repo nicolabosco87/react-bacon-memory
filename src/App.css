@@ -36,3 +36,39 @@
 .cards-list li {
   width: 25%;
 }
+
+.card {
+  margin: 5% auto;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.card__front {
+  width: 200px;
+  height: 200px;
+  background: #aaaaaa;
+  position: absolute;
+  z-index: 2;
+  transform: rotateX(0deg);
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: rotateX(180deg);
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card.card--flipped, .card.card--guessed {
+  transform: rotateX(180deg);
+}
+

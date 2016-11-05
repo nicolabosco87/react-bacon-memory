@@ -3,8 +3,6 @@ import Card from './Card';
 
 export default ({cards, flipCard}) => {
 
-    console.log(flipCard);
-
     return (
         <ul className="cards-list">
             {

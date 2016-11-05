@@ -1,9 +1,9 @@
 import { FLIP_CARD, RESTART_GAME } from '../costants/memory'
 
-function flipCardAction (id) {
+function flipCardAction (cardId) {
     return {
         type: FLIP_CARD,
-        id
+        cardId
     };
 }
 
