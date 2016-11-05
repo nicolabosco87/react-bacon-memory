@@ -69,8 +69,12 @@ export default function memory(state = initialState, action) {
             // console.log(newState);
 
             return newState;
+
+        case RESTART_GAME:
+
+            return initialState;
+
         default:
             return state;
     }
 }
-

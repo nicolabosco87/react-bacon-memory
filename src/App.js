@@ -2,7 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import {bindActionCreators} from 'redux'
 import { connect } from 'react-redux'
 import CardList from './components/CardList'
-import {flipCardAction,restartGameAction} from './actions/memory'
+import Header from './components/Header'
+import {flipCardAction} from './actions/memory'
 import './App.css';
 
 const mapStateToProps = (state) => ({
@@ -31,10 +32,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Bacon Memory Game?</h2>
-          <h3>{memory.round}</h3>
-        </div>
+            <Header></Header>
           <div>
               <CardList cards={memory.cards} flipCard={actions.flipCard} ></CardList>
           </div>

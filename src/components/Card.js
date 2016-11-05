@@ -11,12 +11,14 @@ export default ({card,flipCard}) => {
 
     return (
         <div className={cardClasses} id={card.id} coupleId={card.coupleId} onClick={() => flipCard(card.id)}>
-            <div className="card__front"></div>
+            <div className="card__front"><span>BM</span></div>
             <img src={card.url} alt=""/>
         </div>
     )
 
 }
+
+
 
 
 

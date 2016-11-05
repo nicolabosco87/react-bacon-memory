@@ -45,7 +45,9 @@
   width: 200px;
   height: 200px;
   display: block;
+  border-radius: 10px;
 }
+
 
 .card__front {
   width: 200px;
@@ -57,7 +59,12 @@
   top: 0;
   left: 0;
   backface-visibility: hidden;
+  font-family: "Comic Sans MS";
+  cursor: pointer;
 }
+
+
+
 .card img {
   width: 200px;
   height: 200px;
